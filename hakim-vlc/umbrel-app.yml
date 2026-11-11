@@ -2,12 +2,9 @@ manifestVersion: 1
 id: hakim-vlc
 category: media
 name: VLC (Headless)
-version: "1.0.2"
+version: "1.0.3"
 tagline: VLC with telnet control for Home Assistant
-description: >-
-  Headless VLC player with the telnet interface enabled, for use with the
-  Home Assistant vlc_telnet integration. Plays through the Umbrel host's
-  audio device. Telnet on port 4212, web UI on the app page.
+description: Headless VLC player with telnet control for Home Assistant. Plays through the host audio device.
 developer: Hakim
 website: https://www.videolan.org/
 dependencies: []
@@ -16,7 +13,6 @@ support: https://github.com/hakeymlarh/umbrel-community-store/issues
 port: 8080
 gallery: []
 path: ""
-deterministicPassword: true
-releaseNotes: Initial release
+releaseNotes: ""
 submitter: Hakim
 submission: https://github.com/hakeymlarh/umbrel-community-store
