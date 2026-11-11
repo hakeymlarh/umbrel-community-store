@@ -12,9 +12,10 @@ services:
     group_add:
       - audio
     ports:
-      - "4212:4212"          # telnet for Home Assistant
+      - "4212:4212"
     environment:
       VLC_PASSWORD: ${APP_PASSWORD}
+      VLC_EXTRA_ARGS: "--alsa-audio-device=plughw:0,0"
     volumes:
       - ${APP_DATA_DIR}/config:/config
       - ${UMBREL_ROOT}/data/storage/downloads:/media:ro
