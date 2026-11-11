@@ -10,6 +10,7 @@ website: https://www.videolan.org/
 dependencies: []
 repo: https://github.com/hakeymlarh/umbrel-community-store
 support: https://github.com/hakeymlarh/umbrel-community-store/issues
+deterministicPassword: true
 port: 8080
 gallery: []
 path: ""
