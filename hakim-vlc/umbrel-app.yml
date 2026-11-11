@@ -11,8 +11,8 @@ description: >-
 developer: Hakim
 website: https://www.videolan.org/
 dependencies: []
-repo: https://github.com/YOUR_USER/umbrel-community-store
-support: https://github.com/YOUR_USER/umbrel-community-store/issues
+repo: https://github.com/hakeymlarh/umbrel-community-store
+support: https://github.com/hakeymlarh/umbrel-community-store/issues
 port: 8080
 gallery: []
 path: ""
