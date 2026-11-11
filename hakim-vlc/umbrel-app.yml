@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hakim-vlc
 category: media
 name: VLC (Headless)
-version: "1.0.0"
+version: "1.0.2"
 tagline: VLC with telnet control for Home Assistant
 description: >-
   Headless VLC player with the telnet interface enabled, for use with the
