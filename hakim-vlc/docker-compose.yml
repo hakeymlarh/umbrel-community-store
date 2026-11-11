@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hakim-vlc_server_1
+      APP_PORT: 8080
+  server:
+    image: ghcr.io/hakeymlarh/vlc-headless:1.0.0
+    restart: on-failure
+    devices:
+      - /dev/snd:/dev/snd
+    group_add:
+      - audio
+    ports:
+      - "4212:4212"          # telnet for Home Assistant
+    environment:
+      VLC_PASSWORD: ${APP_PASSWORD}
+    volumes:
+      - ${APP_DATA_DIR}/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/media:ro
